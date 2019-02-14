@@ -103,8 +103,10 @@ gulp.task('default', ['css', 'js', 'vendor']);
 gulp.task('browserSync', function() {
   browserSync.init({
     server: {
-      baseDir: "./"
-    }
+      baseDir: "./",
+      notify: false
+    },
+    notify: false
   });
 });
 
